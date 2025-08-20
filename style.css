@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f0f5f1;
+  background-color: #f2f6f8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,71 +14,86 @@ body {
 }
 
 .container {
+  position: relative;
+  width: 360px;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 20px;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.card {
   background-color: white;
   border-radius: 20px;
-  padding: 25px;
-  width: 320px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-h2 {
-  color: #2e4e32;
-  margin-bottom: 20px;
+.card-image {
+  background-image: url('Img1.png'); /* Replace with your flower image */
+  background-size: cover;
+  background-position: center;
+  height: 250px;
 }
 
-.brand {
-  color: #4CAF50;
+.card-content {
+  padding: 20px;
+  background-color: #fefefe;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -30px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
 }
 
-.plant-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.card-content h2 {
+  font-size: 22px;
+  color: #333;
 }
 
-.plant-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border: 2px solid #e0e0e0;
-  border-radius: 12px;
+.subheading {
+  font-size: 14px;
+  color: #777;
   margin-bottom: 15px;
+}
+
+.card-content h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
 }
 
 .description {
   font-size: 14px;
-  color: #666;
-  margin: 10px 0;
-  padding: 0 10px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-.water-info {
-  margin: 10px 0;
+.price-row {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
 }
 
-.water-btn {
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+.checkout-btn{
   background-color: #4CAF50;
-  color: rgb(19, 18, 18);
+  color: white;
   border: none;
-  border-radius: 25px;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-size: 14px;
   cursor: pointer;
-  margin-top: 15px;
-  transition: background-color 0.3s ease;
-}
-
-.water-btn img {
-  width: 20px;
-  height: 20px;
-}
-
-.water-btn:hover {
-  background-color: #388e3c;
 }
