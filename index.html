@@ -3,58 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oreder Placed</title>
+    <title>Total Bookings</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="menu">&#9776;</div>
-    <h1 class="logo">🌱 GreenGenie</h1>
-    <div class="icons">
-      <span class="bell">🔔</span>
-      <span class="user">👤</span>
-    </div>
-  </header>
-  <main class="container">
-    <div class="order-header">
-      <h2>Order Placed!</h2>
-      <div class="total">$72.60</div>
-    </div>
-    <p class="order-id">Order #6542</p>
-    <div class="card">
-      <div class="item-details">
-        <img src="image1.png" alt="Plant">
-        <div>
-          <h3>Monstera Adansonii</h3>
-          <p>Monstera/Family</p>
-          <span class="rating">⭐ 4.8</span>
+    <div class="app-wrapper">
+    <header class="header">
+      <button class="back-btn">⬅</button>
+      <h1>Total Bookings</h1>
+      <select class="filter">
+        <option>Active Bookings</option>
+        <option>Completed</option>
+        <option>Cancelled</option>
+      </select>
+    </header>
+    <main class="container">
+      <h2 class="section-title">Active Bookings</h2>
+      <div class="card">
+        <div class="booking-info">
+          <h3>Toby Ramos</h3>
+          <p>Mon, Oct 11 • 06:00 PM</p>
+          <p class="desc">Lorem ipsum dolor sit amet…</p>
         </div>
+        <span class="status">Scheduled</span>
       </div>
-      <span class="price">$30</span>
-    </div>
 
-    <div class="card">
-      <div class="item-details">
-        <img src="image2.png" alt="Seeds">
-        <div>
-          <h3>Fruit Bundle #3</h3>
-          <p>Customized seeds</p>
-          <span class="rating">⭐ 4.9</span>
+      <div class="card">
+        <div class="booking-info">
+          <h3>Debbie Meyer</h3>
+          <p>Mon, Oct 11 • 06:00 PM</p>
+          <p class="desc">Lorem ipsum dolor sit amet…</p>
         </div>
+        <span class="status">Scheduled</span>
       </div>
-      <span class="price">$30</span>
-    </div>
-    <div class="thankyou">
-      <p>Thank you for choosing GreenGenie! Your order has been received and is on its way to you.</p>
-      <button class="track-btn">Track Order</button>
-    </div>
-  </main>
-  <nav class="bottom-nav">
-    <a href="#">🏠</a>
-    <a href="#">💬</a>
-    <a href="#">➕</a>
-    <a href="#">❤️</a>
-  </nav>
+
+      <div class="card">
+        <div class="booking-info">
+          <h3>Elijah Jefferson</h3>
+          <p>Mon, Oct 11 • 06:00 PM</p>
+          <p class="desc">Lorem ipsum dolor sit amet…</p>
+        </div>
+        <span class="status">Scheduled</span>
+      </div>
+    </main>
+  </div>
     
 </body>
 </html>
