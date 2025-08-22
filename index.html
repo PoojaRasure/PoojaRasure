@@ -3,63 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout- GreenGenie</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="checkout-container">
     <header>
-      <div class="top-bar">
-        <span class="back">&larr;</span>
+        <button class="back-btn">&#8592;</button>
         <h1 class="logo">Green<span>Genie</span></h1>
-        <span class="bell">&#128276;</span>
-      </div>
     </header>
 
-    <div class="card">
-      <h2>Checkout details</h2>
-      <div class="payment-info">
-        <p>For payment:</p>
-        <h3>$72.60</h3>
-        <span class="vat">Including VAT (21%)</span>
-      </div>
-
-      <div class="payment-methods">
-        <button class="credit-card active">💳 Credit card</button>
-        <button class="apple-pay"> Apple Pay</button>
-      </div>
-
-      <form>
-        <label>Card number</label>
-        <input type="text" placeholder="0000 0000 0000 0000">
-
-        <label>Cardholder name</label>
-        <input type="text" placeholder="e.g. David Kim">
-
-        <div class="row">
-          <div>
-            <label>Expiry date</label>
-            <input type="text" placeholder="MM/YY">
-          </div>
-          <div>
-            <label>CVV / CVC</label>
-            <input type="text" placeholder="123">
-          </div>
+    <section class="checkout-box">
+        <h2>Checkout details</h2>
+        <div class="payment-summary">
+            <p>For payment:</p>
+            <h3>$72.60</h3>
+            <small>Including VAT (21%)</small>
         </div>
 
-        <button class="pay-btn">Pay Now</button>
-      </form>
-    </div>
+        <div class="payment-methods">
+            <button class="method active">Credit card</button>
+            <button class="method">Apple Pay</button>
+        </div>
+
+        <form>
+            <label>Card number</label>
+            <input type="text" placeholder="5261 4141 0151 8472">
+
+            <label>Cardholder name</label>
+            <input type="text" placeholder="David Weber">
+
+            <div class="row">
+                <div>
+                    <label>Expiry date</label>
+                    <input type="text" placeholder="06 / 2024">
+                </div>
+                <div>
+                    <label>CVV / CVC</label>
+                    <input type="text" placeholder="915">
+                </div>
+            </div>
+
+            <button type="submit" class="pay-btn">Pay for the order</button>
+        </form>
+    </section>
 
     <footer>
-      <nav class="bottom-nav">
-        <span>🏠</span>
-        <span>📈</span>
-        <span>🛒</span>
-        <span>🧤</span>
-      </nav>
+        <nav>
+            <a href="#">🏠</a>
+            <a href="#">🌱</a>
+            <a href="#">📦</a>
+            <a href="#">🗑️</a>
+        </nav>
     </footer>
-  </div>
+</div>
     
 </body>
 </html>
