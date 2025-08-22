@@ -3,75 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plant Details - Monstera</title>
+    <title>Checkout- GreenGenie</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-    <div class="header">
-      <span class="back">&#8592;</span>
-      <h1>GreenGenie</h1>
-      <span class="cart">&#128722;</span>
-    </div>
+    <header>
+      <div class="top-bar">
+        <span class="back">&larr;</span>
+        <h1 class="logo">Green<span>Genie</span></h1>
+        <span class="bell">&#128276;</span>
+      </div>
+    </header>
 
     <div class="card">
-      <p class="category">Indoor</p>
-      <h2 class="title">Monstera Adansonii</h2>
-
-      <div class="ratings">
-        <span class="star">⭐ 4.9</span>
+      <h2>Checkout details</h2>
+      <div class="payment-info">
+        <p>For payment:</p>
+        <h3>$72.60</h3>
+        <span class="vat">Including VAT (21%)</span>
       </div>
 
-      <img class="plant-img" src="Img1.png" alt="Monstera" />
-
-      <div class="details">
-        <div>
-          <p class="label">PRICE</p>
-          <p class="value">$ 15</p>
-        </div>
-        <div>
-          <p class="label">SIZE</p>
-          <p class="value">5” h</p>
-        </div>
+      <div class="payment-methods">
+        <button class="credit-card active">💳 Credit card</button>
+        <button class="apple-pay"> Apple Pay</button>
       </div>
 
-      <div class="overview">
-        <h3>Overview</h3>
-        <div class="overview-grid">
+      <form>
+        <label>Card number</label>
+        <input type="text" placeholder="0000 0000 0000 0000">
+
+        <label>Cardholder name</label>
+        <input type="text" placeholder="e.g. David Kim">
+
+        <div class="row">
           <div>
-            <p class="label">LIGHT</p>
-            <p class="value">35-40%</p>
+            <label>Expiry date</label>
+            <input type="text" placeholder="MM/YY">
           </div>
           <div>
-            <p class="label">TEMPERATURE</p>
-            <p class="value">70-75°F</p>
-          </div>
-          <div>
-            <p class="label">WATER</p>
-            <p class="value">250ml</p>
+            <label>CVV / CVC</label>
+            <input type="text" placeholder="123">
           </div>
         </div>
-      </div>
 
-      <div class="about">
-        <h3>About</h3>
-        <p>
-          The Monstera Adansonii grows best in a warm, humid environment. Perfect plant for indoor spaces and offices.
-        </p>
-      </div>
-
-      <div class="add-to-cart">
-        <button>Add to Cart</button>
-        <span>$15</span>
-      </div>
+        <button class="pay-btn">Pay Now</button>
+      </form>
     </div>
 
-    <div class="bottom-nav">
-      <span>🏠</span>
-      <span>💬</span>
-      <span>❤️</span>
-      <span>👤</span>
-    </div>
+    <footer>
+      <nav class="bottom-nav">
+        <span>🏠</span>
+        <span>📈</span>
+        <span>🛒</span>
+        <span>🧤</span>
+      </nav>
+    </footer>
   </div>
+    
 </body>
 </html>
