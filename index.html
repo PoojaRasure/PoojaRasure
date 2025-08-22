@@ -7,72 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <div class="app">
-    <header class="topbar">
-      <button class="back" aria-label="Go back">←</button>
-      <h1>Completed Bookings</h1>
-    </header>
+    <div class="container">
+    <div class="header">
+      <button class="back-btn">←</button>
+      <h2>Requests</h2>
+    </div>
+    <section class="card">
+      <h3>Bookings Requests</h3>
+      <div class="stat-box">
+        <div class="stat">
+          <p>Total Bookings</p>
+        </div>
+        <div class="actions">
+          <button class="approve">Approve</button>
+          <button class="decline">Decline</button>
+        </div>
+      </div>
+      <div class="stat-box">
+        <div class="stat">
+          <p>Total Customers</p>
+        </div>
+      </div>
+      <div class="stat-box">
+        <div class="stat">
+          <p>Total Gardeners</p>
+        </div>
+      </div>
+    </section>
+    <section class="card">
+      <h3>Gardeners Requests</h3>
+      <div class="request">
+        <div class="info">
+          <h4>Saif Ahmed</h4>
+          <p>Edit Request - Decorative Service</p>
+          <span>Mon, Oct 15 - 06:00 PM</span>
+        </div>
+      </div>
 
-    <main class="list">
-      <article class="card">
-        <div class="card-row">
-          <h2 class="name">Toby Ramos</h2>
-          <span class="badge success">Completed</span>
+      <div class="request">
+        <div class="info">
+          <h4>Saif Ahmed</h4>
+          <p>Upload Request - Decorative Service</p>
+          <span>Mon, Oct 15 - 04:00 PM</span>
         </div>
-        <div class="meta">
-          <div class="meta-row">
-            <span class="icon">📅</span>
-            <span>Mon, Oct 15 • 08:00 PM</span>
-          </div>
-          <div class="meta-row">
-            <span class="icon">📍</span>
-            <span>Lower Garden District, LA</span>
-          </div>
-        </div>
-      </article>
+        <img src="img1.png" alt="Plant">
+      </div>
+    </section>
 
-      <article class="card">
-        <div class="card-row">
-          <h2 class="name">Debbie Meyer</h2>
-          <span class="badge success">Completed</span>
-        </div>
-        <div class="meta">
-          <div class="meta-row">
-            <span class="icon">📅</span>
-            <span>Tue, Oct 16 • 02:30 PM</span>
-          </div>
-          <div class="meta-row">
-            <span class="icon">📍</span>
-            <span>Riverside Park, NY</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-row">
-          <h2 class="name">Elijah Jefferson</h2>
-          <span class="badge success">Completed</span>
-        </div>
-        <div class="meta">
-          <div class="meta-row">
-            <span class="icon">📅</span>
-            <span>Wed, Oct 17 • 11:15 AM</span>
-          </div>
-          <div class="meta-row">
-            <span class="icon">📍</span>
-            <span>Downtown, Austin</span>
-          </div>
-        </div>
-      </article>
-    </main>
-
-    <nav class="bottom-nav">
-      <a href="#" class="nav-item" aria-label="Home">🏠</a>
-      <a href="#" class="nav-item" aria-label="Bookings">🗂️</a>
-      <a href="#" class="nav-item active" aria-label="Completed">✅</a>
-      <a href="#" class="nav-item" aria-label="Profile">👤</a>
-    </nav>
   </div>
-    
 </body>
 </html>
