@@ -3,44 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming Bookings</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Booking Accepted</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-   <div class="container">
-    <h2 class="title">📅 Upcoming Bookings</h2>
-    <div class="card">
-      <p><strong>Sait Ahmed</strong></p>
-      <p>⚽ Football Service</p>
-      <p>Mon, Oct 15 - 08:00 PM</p>
-      <p>📍 Riverside Park, NY</p>
-      <div class="map">
-        <img src="img1.jpg" alt="Map 1">
+  <main class="page">
+    <section class="card">
+      <div class="icon-wrap">
+        <svg class="check" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="11" class="ring"></circle>
+          <path d="M7 12.5l3.2 3.2L17 9" class="tick"></path>
+        </svg>
       </div>
-      <span class="status">Scheduled</span>
-    </div>
-    <div class="card">
-      <p><strong>Sait Ahmed</strong></p>
-      <p>⚽ Football Service</p>
-      <p>Tue, Oct 16 - 11:00 AM</p>
-      <p>📍 Downtown, Austin</p>
-      <div class="map">
-        <img src="img2.jpg" alt="Map 2">
-      </div>
-      <span class="status">Scheduled</span>
-    </div>
 
-    <div class="card">
-      <p><strong>Sait Ahmed</strong></p>
-      <p>⚽ Football Service</p>
-      <p>Wed, Oct 17 - 04:00 PM</p>
-      <p>📍 Central Park, NY</p>
-      <div class="map">
-        <img src="img3.jpg" alt="Map 3">
-      </div>
-      <span class="status">Scheduled</span>
-    </div>
+      <h1 class="title">Booking Accepted</h1>
+      <p class="subtitle">Your booking has been confirmed. We’ve sent the details to your email.</p>
 
-  </div>
+      <button class="primary-btn">View Booking Details</button>
+
+      <button class="secondary-btn" type="button">Go to Home</button>
+    </section>
+  </main>
 </body>
 </html>
