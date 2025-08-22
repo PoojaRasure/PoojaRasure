@@ -1,128 +1,131 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-body {
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 20px;
-}
-.container {
-  width: 100%;
-  max-width: 420px;
-}
-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-header h2 {
-  flex: 1;
-  text-align: center;
-  font-size: 22px;
-  color: #4CAF50;
-}
-.back-btn {
-  background: none;
-  border: none;
-  color: #4CAF50;
-  font-size: 22px;
-  cursor: pointer;
-}
-.bookings {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.booking-card {
-  background: #1a1a1a;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
-  transition: transform 0.2s;
-}
-.booking-card:hover {
-  transform: scale(1.02);
+:root{
+  --bg:#0b0b0b;
+  --card:#141414;
+  --text:#e9f2ee;
+  --muted:#9fb1ab;
+  --accent:#7ce9b4;
+  --border:#1f1f1f;
 }
 
-.booking-card img {
-  width: 100%;
-  height: auto;
+*{box-sizing:border-box}
+
+html,body{
+  height:100%;
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:var(--bg);
 }
 
-.details {
-  padding: 12px;
+.app{
+  min-height:100%;
+  max-width:430px;       
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  padding:12px;
+  gap:12px;
 }
-.details h4 {
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 4px;
+.topbar{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 14px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  position:sticky;
+  top:8px;
+  z-index:10;
 }
-.details p {
-  font-size: 14px;
-  color: #bbb;
-  margin-bottom: 10px;
+.topbar h1{
+  font-size:1.25rem;
+  margin:0;
+  letter-spacing:.2px;
 }
-.view-btn {
-  background: #4CAF50;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 14px;
-}
-.view-btn:hover {
-  background: #45a049;
-}
-.booking-card {
-  background: #1a1a1a;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.7);
-  margin-bottom: 20px;
-  transition: transform 0.2s ease-in-out;
-}
-.booking-card:hover {
-  transform: scale(1.02);
-}
-
-.booking-card img {
-  width: 100%;
-  height: 180px; 
-  object-fit: cover;
-  display: block;
+.back{
+  border:none;
+  background:#163c2e;
+  color:var(--accent);
+  height:36px;
+  width:36px;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:18px;
+  display:grid;
+  place-items:center;
 }
 
-.details {
-  padding: 15px;
+.list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  padding-bottom:72px;
 }
-.details h4 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 6px;
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:14px;
+  box-shadow:0 6px 16px rgba(0,0,0,.25);
 }
-.details p {
-  font-size: 14px;
-  color: #aaa;
-  margin-bottom: 12px;
+.card-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
 }
-.view-btn {
-  background: #4CAF50;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background 0.3s;
+.name{
+  font-size:1rem;
+  margin:0;
 }
-.view-btn:hover {
-  background: #45a049;
+.badge{
+  font-size:.75rem;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:#123d2d;
+}
+.badge.success{
+  color:#0de28a;
+  border-color:#15533e;
+}
+
+.meta{
+  margin-top:8px;
+  display:grid;
+  gap:6px;
+  color:var(--muted);
+  font-size:.9rem;
+}
+.meta-row{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  line-height:1.2;
+}
+.icon{opacity:.9}
+
+.bottom-nav{
+  position:sticky;
+  bottom:8px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:8px 12px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  height:56px;
+}
+.nav-item{
+  text-decoration:none;
+  color:var(--muted);
+  font-size:1.25rem;
+}
+.nav-item.active{ color:var(--accent); }
+
+@media (max-width:480px){
+  .app{ padding:10px }
 }
