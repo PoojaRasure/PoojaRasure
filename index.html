@@ -3,28 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Accepted</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Nutrition Summary</title>
+     <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="page">
+    <main class="page">
     <section class="card">
-      <div class="icon-wrap">
-        <svg class="check" viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="12" r="11" class="ring"></circle>
-          <path d="M7 12.5l3.2 3.2L17 9" class="tick"></path>
-        </svg>
+      <header class="header">
+        <h1 class="logo">GreenGenie</h1>
+        <span class="bell">🔔</span>
+      </header>
+      <div class="summary">
+        <h2>Nutritional Summary</h2>
+        <p class="weight">Weight: <strong>54 kg</strong></p>
+        <div class="graph">
+          <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+            <polyline 
+              fill="none" 
+              stroke="#1db6a3" 
+              stroke-width="3"
+              points="0,70 40,50 80,60 120,40 160,55 200,35 240,50 280,45 300,60"
+            />
+          </svg>
+        </div>
       </div>
-
-      <h1 class="title">Booking Accepted</h1>
-      <p class="subtitle">Your booking has been confirmed. We’ve sent the details to your email.</p>
-
-      <button class="primary-btn">View Booking Details</button>
-
-      <button class="secondary-btn" type="button">Go to Home</button>
+      <div class="sliders">
+        <h3>For 1 portion</h3>
+        <label>Protein
+          <input type="range" min="0" max="100" value="70">
+        </label>
+        <label>Carbs
+          <input type="range" min="0" max="100" value="40">
+        </label>
+        <label>Fat
+          <input type="range" min="0" max="100" value="25">
+        </label>
+      </div>
+      <button class="continue-btn">Continue</button>
+      <nav class="bottom-nav">
+        <a href="#" class="nav-item">🏠<span>Home</span></a>
+        <a href="#" class="nav-item active">📊<span>Summary</span></a>
+        <a href="#" class="nav-item">🛒<span>Cart</span></a>
+        <a href="#" class="nav-item">👤<span>Profile</span></a>
+      </nav>
     </section>
   </main>
+    
 </body>
 </html>
