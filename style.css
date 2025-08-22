@@ -1,123 +1,154 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Black background */
-    margin: 0;
-    padding: 0;
-    color: white;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-.checkout-container {
-    max-width: 400px;
-    margin: auto;
-    padding: 15px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #1a1a1a;
 }
 
-header {
-    display: flex;
-    align-items: center;
+.header .logo {
+  font-size: 1.2rem;
+  color: #8fff8f;
+}
+
+.header .menu, 
+.header .icons span {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.container {
+  padding: 20px;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8fff8f;
+}
+
+.order-id {
+  margin: 10px 0 20px;
+  color: #aaa;
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-details img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.item-details h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.item-details p {
+  margin: 3px 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.rating {
+  font-size: 0.8rem;
+  color: #8fff8f;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.thankyou {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.track-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #8fff8f;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.track-btn:hover {
+  background: #6ad96a;
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-top: 1px solid #333;
+}
+
+.bottom-nav a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
-}
+  }
 
-.back-btn {
-    background: none;
-    border: none;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-}
+  .price {
+    align-self: flex-end;
+  }
 
-.logo {
-    color: #1e7d32;
-    font-size: 20px;
-}
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 
-.logo span {
-    font-weight: bold;
+  .total {
+    font-size: 1.2rem;
+  }
 }
-
-.checkout-box {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 15px;
-    color: black; /* Keep text inside box black */
-}
-
-.checkout-box h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.payment-summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.payment-summary h3 {
-    color: #000;
-    font-size: 18px;
-}
-
-.payment-methods {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.payment-methods .method {
-    flex: 1;
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background: #f5f5f5;
-    cursor: pointer;
-}
-
-.payment-methods .active {
-    background: #1e7d32;
-    color: white;
-    border: none;
-}
-
-form label {
-    font-size: 14px;
-    display: block;
-    margin: 8px 0 4px;
-}
-
-form input {
-    width: 100%;
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-}
-
-.row {
-    display: flex;
-    gap: 10px;
-}
-
-.pay-btn {
-    width: 100%;
-    padding: 10px;
-    background: #1e7d32;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-footer {
-    margin-top: 20px;
-}
-
-footer nav {
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
-}
-

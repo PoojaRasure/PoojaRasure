@@ -3,60 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oreder Placed</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="checkout-container">
-    <header>
-        <button class="back-btn">&#8592;</button>
-        <h1 class="logo">Green<span>Genie</span></h1>
-    </header>
-
-    <section class="checkout-box">
-        <h2>Checkout details</h2>
-        <div class="payment-summary">
-            <p>For payment:</p>
-            <h3>$72.60</h3>
-            <small>Including VAT (21%)</small>
+  <header class="header">
+    <div class="menu">&#9776;</div>
+    <h1 class="logo">🌱 GreenGenie</h1>
+    <div class="icons">
+      <span class="bell">🔔</span>
+      <span class="user">👤</span>
+    </div>
+  </header>
+  <main class="container">
+    <div class="order-header">
+      <h2>Order Placed!</h2>
+      <div class="total">$72.60</div>
+    </div>
+    <p class="order-id">Order #6542</p>
+    <div class="card">
+      <div class="item-details">
+        <img src="image1.png" alt="Plant">
+        <div>
+          <h3>Monstera Adansonii</h3>
+          <p>Monstera/Family</p>
+          <span class="rating">⭐ 4.8</span>
         </div>
+      </div>
+      <span class="price">$30</span>
+    </div>
 
-        <div class="payment-methods">
-            <button class="method active">Credit card</button>
-            <button class="method">Apple Pay</button>
+    <div class="card">
+      <div class="item-details">
+        <img src="image2.png" alt="Seeds">
+        <div>
+          <h3>Fruit Bundle #3</h3>
+          <p>Customized seeds</p>
+          <span class="rating">⭐ 4.9</span>
         </div>
-
-        <form>
-            <label>Card number</label>
-            <input type="text" placeholder="5261 4141 0151 8472">
-
-            <label>Cardholder name</label>
-            <input type="text" placeholder="David Weber">
-
-            <div class="row">
-                <div>
-                    <label>Expiry date</label>
-                    <input type="text" placeholder="06 / 2024">
-                </div>
-                <div>
-                    <label>CVV / CVC</label>
-                    <input type="text" placeholder="915">
-                </div>
-            </div>
-
-            <button type="submit" class="pay-btn">Pay for the order</button>
-        </form>
-    </section>
-
-    <footer>
-        <nav>
-            <a href="#">🏠</a>
-            <a href="#">🌱</a>
-            <a href="#">📦</a>
-            <a href="#">🗑️</a>
-        </nav>
-    </footer>
-</div>
+      </div>
+      <span class="price">$30</span>
+    </div>
+    <div class="thankyou">
+      <p>Thank you for choosing GreenGenie! Your order has been received and is on its way to you.</p>
+      <button class="track-btn">Track Order</button>
+    </div>
+  </main>
+  <nav class="bottom-nav">
+    <a href="#">🏠</a>
+    <a href="#">💬</a>
+    <a href="#">➕</a>
+    <a href="#">❤️</a>
+  </nav>
     
 </body>
 </html>
